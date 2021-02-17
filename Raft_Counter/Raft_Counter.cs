@@ -67,6 +67,28 @@ public class Raft_Counter : Mod
             }
             return;
         }
+
+        if (block.Reinforced)
+        {
+            string metalIngot = "MetalIngot";
+            if (!itemsRequired.ContainsKey(metalIngot))
+            {
+                itemsRequired.Add(metalIngot, 1);
+            } else
+            {
+                itemsRequired[metalIngot] += 1;
+            }
+
+            string nail = "Nail";
+            if (!itemsRequired.ContainsKey(nail))
+            {
+                itemsRequired.Add(nail, 2);
+            }
+            else
+            {
+                itemsRequired[nail] += 2;
+            }
+        }
         ItemInstance_Recipe recipe = baseItem.settings_recipe;
         CostMultiple[] costs = recipe.NewCost;
         if (costs == null) return;
