@@ -2,7 +2,7 @@
   "name": "Raft_Cost",
   "author": "romaindurand",
   "description": "Adds a 'raftCost' command to the console that lists all the base material needed to build your current raft. Can be useful if you want to know how much you need to farm in order to reproduce a raft you made in creative mode.",
-  "version": "1.0",
+  "version": "1.1.0",
   "license": "GNU AGPLv3",
   "icon": "icon.png",
   "banner": "banner.jpg",
